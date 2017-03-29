@@ -1,0 +1,8 @@
+{
+  "name": "todo-regular",
+  "version": "0.0.1",
+  "dependencies": {
+    "regularjs": "git+https://g.hz.netease.com/edu-front-vendor/regularjs.git#0.5.1",
+    "nej": "git+https://g.hz.netease.com/edu-front-vendor/nej.git#0.3.8"
+  }
+}

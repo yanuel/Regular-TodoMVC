@@ -1,2 +1,13 @@
 # Regular-TodoMVC
-一个mvvm框架regular实现todo
+
+## 怎么用？
+
+``` bash
+
+bower install
+
+sudo npm install -g http-server 
+
+访问index.html
+
+```

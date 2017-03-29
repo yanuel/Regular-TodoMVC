@@ -1,0 +1,12 @@
+<li r-class={{'completed':item.status == cst.COMPLETED_TODO,'editing':item.mode == cst.EDIT_MODE}}>
+	<div class="view">
+		{#if item.status == cst.COMPLETED_TODO}
+			<input class="toggle" type="checkbox" checked on-click={this.onClick($event)}>
+		{#else}
+			<input class="toggle" type="checkbox" on-click={this.onClick($event)}>
+		{/if}
+		<label on-dblclick={this.onDBlClick($event)}>{item.title}</label>
+		<button class="destroy" on-click={this.onClearItem()}></button>
+	</div>
+	<input id={'input-'+item.id} class="edit" value={item.title} on-keyup={this.onKeyup($event)} on-focusout={this.onFocusout($event)}>
+</li>
